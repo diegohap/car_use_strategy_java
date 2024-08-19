@@ -22,5 +22,9 @@ public class main {
         car.drive(Car.USE_DAY.FRIDAY);
         System.out.println(car.getWeaponsActivated());
         System.out.println(car.getCamouflageActivated());
+
+        car.drive(Car.USE_DAY.MONDAY);
+        System.out.println(car.getWeaponsActivated());
+        System.out.println(car.getCamouflageActivated());
     }
 }
