@@ -6,9 +6,9 @@ import service.Driving;
 public class RacingDrivingImpl implements Driving {
 
     @Override
-    public void drive(Car car) {
+    public String drive(Car car) {
         car.setWeaponsActivated(false);
         car.setCamouflageActivated(false);
-        System.out.println("Racing on the circuit...");
+        return "Racing on the circuit...";
     }
 }

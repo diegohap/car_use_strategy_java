@@ -31,8 +31,8 @@ public class Car {
         dayDrivingMap.put(USE_DAY.FRIDAY, new SecretAgentImpl());
     }
 
-    public void drive(USE_DAY useDay) {
-        dayDrivingMap.get(useDay).drive(this);
+    public String drive(USE_DAY useDay) {
+        return useDay.name() + " " + dayDrivingMap.get(useDay).drive(this);
     }
 
     public enum USE_DAY {

@@ -6,9 +6,9 @@ import service.Driving;
 public class SecretAgentImpl implements Driving {
 
     @Override
-    public void drive(Car car) {
+    public String drive(Car car) {
         car.setWeaponsActivated(true);
         car.setCamouflageActivated(true);
-        System.out.println("Activating camouflage and weapons...");
+        return "Activating camouflage and weapons...";
     }
 }

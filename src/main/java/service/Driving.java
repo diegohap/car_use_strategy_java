@@ -4,5 +4,5 @@ import entity.Car;
 
 
 public interface Driving {
-    void drive(Car car);
+    String drive(Car car);
 }
